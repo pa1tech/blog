@@ -17,15 +17,15 @@ Let's get into the elaboration of the above lines.
 
 ### The Slab Table
 
-|    Tax Slab   	| Old Regime (%) 	| New Regime (%) 	|
-|:-------------:	|:--------------:	|:--------------:	|
-|    0 - 2.5L   	|        0       	|        0       	|
-|   2.5L - 5L   	|        5       	|        5       	|
-|   5L - 7.5L   	|       10       	|       20       	|
-|   7.5L - 10L  	|       15       	|       20       	|
-|  10L - 12.5L  	|       20       	|       30       	|
-|  12.5L - 15L  	|       25       	|       30       	|
-| 15L and above 	|       30       	|       30       	|
+|    Tax Slab   	| Old Regime(%) 	| New Regime(%) 	|
+|:-------------:	|:-------------:	|:-------------:	|
+|    0 - 2.5L   	|       0       	|       0       	|
+|   2.5L - 5L   	|       5       	|       5       	|
+|   5L - 7.5L   	|       10      	|       20      	|
+|   7.5L - 10L  	|       15      	|       20      	|
+|  10L - 12.5L  	|       20      	|       30      	|
+|  12.5L - 15L  	|       25      	|       30      	|
+| 15L and above 	|       30      	|       30      	|
 
 Since slabs are defined for every 2.5L, I will assume a gross salary which is a multiple of 2.5L.
 
@@ -34,16 +34,15 @@ Let's compute the tax liability for different taxable incomes(gross-deductions).
 
 For example, a net taxable income of 10L in old regime is liable to (5%+20%+20%) = 45% of 2.5L = 1.125L.The same in the new ta regime will be (5%+10%+15%) = 30% of 2.5L = 0.75L
 
-| Gross Taxable Income 	| New Regime (% of 2.5L) 	| Old Regime (% of 2.5L) 	|
-|:--------------------:	|:----------------------:	|:----------------------:	|
-|          5L          	|            5           	|            5           	|
-|         7.5L         	|           15           	|           25           	|
-|          10L         	|           30           	|           45           	|
-|         12.5L        	|           50           	|           75           	|
-|          15L         	|           75           	|           105          	|
-|         17.5L        	|           105          	|           135          	|
-|          20L         	|           135          	|           165          	|
-
+| Gross Taxable Income 	| New Regime<br>(% of 2.5L) 	| Old Regime<br>(% of 2.5L) 	|
+|:--------------------:	|:-------------------------:	|:-------------------------:	|
+|          5L          	|             5             	|             5             	|
+|         7.5L         	|             15            	|             25            	|
+|          10L         	|             30            	|             45            	|
+|         12.5L        	|             50            	|             75            	|
+|          15L         	|             75            	|            105            	|
+|         17.5L        	|            105            	|            135            	|
+|          20L         	|            135            	|            165            	|
 
 From 12.5L, we can clearly observe one slab offset between the liability in the old and the new regimes, i.e, a gross taxable income of 12.5L in the old tax regime has the same liability as to a gross taxable income of 15L in the new tax regime!
 
@@ -60,15 +59,16 @@ So this makes me say that old regime is always better in the >12.5L income group
 
 ### Investments vs No Investment
 
-| Gross Taxable Income in the new regime 	| New Regime (% of 2.5L) 	| Old Regime 1L deductions (% of 2.5L) 	| Old Regime 2.5L deductions (% of 2.5L) 	|
-|:---:	|:---:	|:---:	|:---:	|
-| 5L 	| 5 	| 3 	| 0 	|
-| 7.5L 	| 15 	| 17 	| 5 	|
-| 10L 	| 30 	| 37 	| 25 	|
-| 12.5L 	| 50 	| 63 	| 45 	|
-| 15L 	| 75 	| 93 	| 75 	|
-| 17.5L 	| 105 	| 123 	| 105 	|
-| 20L 	| 135 	| 153 	| 135 	|
+| Gross Taxable Income<br>in the new regime 	| New Regime<br>(% of 2.5L) 	| Old Regime<br>with 1L deductions<br>(% of 2.5L) 	| Old Regime<br>with 2.5L deductions<br>(% of 2.5L) 	|
+|:-----------------------------------------:	|:-------------------------:	|:-----------------------------------------------:	|:-------------------------------------------------:	|
+|                     5L                    	|             5             	|                        3                        	|                         0                         	|
+|                    7.5L                   	|             15            	|                        17                       	|                         5                         	|
+|                    10L                    	|             30            	|                        37                       	|                         25                        	|
+|                   12.5L                   	|             50            	|                        63                       	|                         45                        	|
+|                    15L                    	|             75            	|                        93                       	|                         75                        	|
+|                   17.5L                   	|            105            	|                       123                       	|                        105                        	|
+|                    20L                    	|            135            	|                       153                       	|                        135                        	|
+
 
 The above two cases assumed in old regime are the extremes with 1L deductions(50K standard + 50K PF) and 2.5L deductions
 
