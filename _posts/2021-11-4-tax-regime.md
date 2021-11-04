@@ -17,58 +17,49 @@ Let's get into the elaboration of the above lines.
 
 ### The Slab Table
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
-</style>
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-7btt">Gross Taxable Income</th>
-    <th class="tg-7btt">New Regime<br>(% of 2.5L)</th>
-    <th class="tg-7btt">Old Regime<br>(% of 2.5L)</th>
+    <th>Tax Slab</th>
+    <th>New Regime (%)</th>
+    <th>Old Regime (%)</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-c3ow">5L</td>
-    <td class="tg-c3ow">5</td>
-    <td class="tg-c3ow">5</td>
+    <td>0 - 2.5L</td>
+    <td>0</td>
+    <td>0</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">7.5L</td>
-    <td class="tg-c3ow">15</td>
-    <td class="tg-c3ow">25</td>
+    <td>2.5L - 5L</td>
+    <td>5</td>
+    <td>5</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">10L</td>
-    <td class="tg-c3ow">30</td>
-    <td class="tg-c3ow">45</td>
+    <td>5L - 7.5L</td>
+    <td>10</td>
+    <td>20</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">12.5L</td>
-    <td class="tg-c3ow">50</td>
-    <td class="tg-c3ow">75</td>
+    <td>7.5L - 10L</td>
+    <td>15</td>
+    <td>20</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">15L</td>
-    <td class="tg-c3ow">75</td>
-    <td class="tg-c3ow">105</td>
+    <td>10L - 12.5L</td>
+    <td>20</td>
+    <td>30</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">17.5L</td>
-    <td class="tg-c3ow">105</td>
-    <td class="tg-c3ow">135</td>
+    <td>12.5L - 15L</td>
+    <td>25</td>
+    <td>30</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">20L</td>
-    <td class="tg-c3ow">135</td>
-    <td class="tg-c3ow">165</td>
+    <td>15L and above</td>
+    <td>30</td>
+    <td>30</td>
   </tr>
 </tbody>
 </table>
@@ -80,15 +71,52 @@ Let's compute the tax liability for different taxable incomes(gross-deductions).
 
 For example, a net taxable income of 10L in old regime is liable to (5%+20%+20%) = 45% of 2.5L = 1.125L.The same in the new ta regime will be (5%+10%+15%) = 30% of 2.5L = 0.75L
 
-| Gross Taxable Income 	| New Regime<br>(% of 2.5L) 	| Old Regime<br>(% of 2.5L) 	|
-|:--------------------:	|:-------------------------:	|:-------------------------:	|
-|          5L          	|             5             	|             5             	|
-|         7.5L         	|             15            	|             25            	|
-|          10L         	|             30            	|             45            	|
-|         12.5L        	|             50            	|             75            	|
-|          15L         	|             75            	|            105            	|
-|         17.5L        	|            105            	|            135            	|
-|          20L         	|            135            	|            165            	|
+<table>
+<thead>
+  <tr>
+    <th>Gross Taxable Income</th>
+    <th>New Regime<br>(% of 2.5L)</th>
+    <th>Old Regime<br>(% of 2.5L)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>5L</td>
+    <td>5</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>7.5L</td>
+    <td>15</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>10L</td>
+    <td>30</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>12.5L</td>
+    <td>50</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>15L</td>
+    <td>75</td>
+    <td>105</td>
+  </tr>
+  <tr>
+    <td>17.5L</td>
+    <td>105</td>
+    <td>135</td>
+  </tr>
+  <tr>
+    <td>20L</td>
+    <td>135</td>
+    <td>165</td>
+  </tr>
+</tbody>
+</table>
 
 From 12.5L, we can clearly observe one slab offset between the liability in the old and the new regimes, i.e, a gross taxable income of 12.5L in the old tax regime has the same liability as to a gross taxable income of 15L in the new tax regime!
 
@@ -105,16 +133,60 @@ So this makes me say that old regime is always better in the >12.5L income group
 
 ### Investments vs No Investment
 
-| Gross Taxable Income<br>in the new regime 	| New Regime<br>(% of 2.5L) 	| Old Regime<br>with 1L deductions<br>(% of 2.5L) 	| Old Regime<br>with 2.5L deductions<br>(% of 2.5L) 	|
-|:-----------------------------------------:	|:-------------------------:	|:-----------------------------------------------:	|:-------------------------------------------------:	|
-|                     5L                    	|             5             	|                        3                        	|                         0                         	|
-|                    7.5L                   	|             15            	|                        17                       	|                         5                         	|
-|                    10L                    	|             30            	|                        37                       	|                         25                        	|
-|                   12.5L                   	|             50            	|                        63                       	|                         45                        	|
-|                    15L                    	|             75            	|                        93                       	|                         75                        	|
-|                   17.5L                   	|            105            	|                       123                       	|                        105                        	|
-|                    20L                    	|            135            	|                       153                       	|                        135                        	|
-
+<table>
+<thead>
+  <tr>
+    <th>Gross Taxable Income<br>in the new regime</th>
+    <th>New Regime<br>(% of 2.5L)</th>
+    <th>Old Regime<br>with 1L deductions<br>(% of 2.5L)</th>
+    <th>Old Regime<br>with 2.5L deductions<br>(% of 2.5L)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>5L</td>
+    <td>5</td>
+    <td>3</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>7.5L</td>
+    <td>15</td>
+    <td>17</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>10L</td>
+    <td>30</td>
+    <td>37</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>12.5L</td>
+    <td>50</td>
+    <td>63</td>
+    <td>45</td>
+  </tr>
+  <tr>
+    <td>15L</td>
+    <td>75</td>
+    <td>93</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>17.5L</td>
+    <td>105</td>
+    <td>123</td>
+    <td>105</td>
+  </tr>
+  <tr>
+    <td>20L</td>
+    <td>135</td>
+    <td>153</td>
+    <td>135</td>
+  </tr>
+</tbody>
+</table>
 
 The above two cases assumed in old regime are the extremes with 1L deductions(50K standard + 50K PF) and 2.5L deductions
 
