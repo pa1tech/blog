@@ -17,15 +17,61 @@ Let's get into the elaboration of the above lines.
 
 ### The Slab Table
 
-|    Tax Slab   	| Old Regime(%) 	| New Regime(%) 	|
-|:-------------:	|:-------------:	|:-------------:	|
-|    0 - 2.5L   	|       0       	|       0       	|
-|   2.5L - 5L   	|       5       	|       5       	|
-|   5L - 7.5L   	|       10      	|       20      	|
-|   7.5L - 10L  	|       15      	|       20      	|
-|  10L - 12.5L  	|       20      	|       30      	|
-|  12.5L - 15L  	|       25      	|       30      	|
-| 15L and above 	|       30      	|       30      	|
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-7btt">Gross Taxable Income</th>
+    <th class="tg-7btt">New Regime<br>(% of 2.5L)</th>
+    <th class="tg-7btt">Old Regime<br>(% of 2.5L)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-c3ow">5L</td>
+    <td class="tg-c3ow">5</td>
+    <td class="tg-c3ow">5</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">7.5L</td>
+    <td class="tg-c3ow">15</td>
+    <td class="tg-c3ow">25</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">10L</td>
+    <td class="tg-c3ow">30</td>
+    <td class="tg-c3ow">45</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">12.5L</td>
+    <td class="tg-c3ow">50</td>
+    <td class="tg-c3ow">75</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">15L</td>
+    <td class="tg-c3ow">75</td>
+    <td class="tg-c3ow">105</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">17.5L</td>
+    <td class="tg-c3ow">105</td>
+    <td class="tg-c3ow">135</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">20L</td>
+    <td class="tg-c3ow">135</td>
+    <td class="tg-c3ow">165</td>
+  </tr>
+</tbody>
+</table>
 
 Since slabs are defined for every 2.5L, I will assume a gross salary which is a multiple of 2.5L.
 
