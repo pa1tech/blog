@@ -2,8 +2,6 @@
 layout: post
 title: "#2 Inland Letter Card"
 avatar: "/images/2_india_post.png"
-image: 
-	path: /images/2_india_post.png
 ---
 [India Post](https://www.indiapost.gov.in) is one of the largest postal services network in the world by GoI. We all should be proud of it, be aware of the services provided, and utilize them. Even in this digital era, the need for mailing and courier services is significantly prevailing for authenticity and maintaining records. 
 
